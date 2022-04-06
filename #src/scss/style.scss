@@ -5,8 +5,13 @@
 @import './components/demo';
 
 .hero {
+  display: none;
   height: 100vh;
   min-height: 300px;
+
+  &.show {
+    display: block;
+  }
 
   @media(min-width: 768px) {
     min-height: 470px;
